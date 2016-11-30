@@ -6,11 +6,11 @@ class Staff_Directory_Admin {
 	}
 
 	static function add_admin_menu_items() {
-		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Settings', 'Settings', 'publish_posts',
+		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Settings', 'Settings', 'publish_staff',
 			'staff-directory-settings', array( 'Staff_Directory_Admin', 'settings' ) );
-		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Help', 'Help', 'publish_posts',
+		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Help', 'Help', 'publish_staff',
 			'staff-directory-help', array( 'Staff_Directory_Admin', 'help' ) );
-		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Import', 'Import Old Staff', 'publish_posts',
+		add_submenu_page( 'edit.php?post_type=staff', 'Staff Directory Import', 'Import Old Staff', 'publish_staff',
 			'staff-directory-import', array( 'Staff_Directory_Admin', 'import' ) );
 	}
 
