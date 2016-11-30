@@ -86,6 +86,12 @@ class Staff_Directory {
 				'with_front'   => false,
 				'hierarchical' => true
 			),
+			'capabilities' => array(
+				'manage_terms' => 'edit_staff',
+				'edit_terms' => 'edit_staff',
+				'delete_terms' => 'delete_staff',
+				'assign_terms' => 'edit_staff',
+			)
 		) );
 	}
 
