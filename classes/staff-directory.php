@@ -48,7 +48,19 @@ class Staff_Directory {
 				),
 				'public'     => true,
 				'menu_icon'  => 'dashicons-groups',
-				'taxonomies' => array( 'staff_category' )
+				'taxonomies' => array( 'staff_category' ),
+				'capability_type' => 'staff',
+				'capabilities' => array(
+					'publish_posts' => 'publish_staff',
+					'edit_posts' => 'edit_staff',
+					'edit_others_posts' => 'edit_others_staff',
+					'delete_posts' => 'delete_staff',
+					'delete_others_posts' => 'delete_others_staff',
+					'read_private_posts' => 'read_private_staff',
+					'edit_post' => 'edit_staff',
+					'delete_post' => 'delete_staff',
+					'read_post' => 'read_staff',
+				)
 			)
 		);
 	}
